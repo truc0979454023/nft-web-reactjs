@@ -11,6 +11,7 @@ import Button from "../common/Button";
 
 const Section = styled.section`
   width: 100vw;
+  min-height: 15rem;
   height: 55%;
   position: relative;
   border-top: 2px solid ${(props) => props.theme.text};
@@ -26,7 +27,7 @@ const Section = styled.section`
   @media (max-width: 48rem) {
     flex-direction: column;
     padding: 1rem 0;
-    height: fit-content;
+    /* height: fit-content; */
   }
 `;
 

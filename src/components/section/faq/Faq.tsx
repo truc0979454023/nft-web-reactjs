@@ -13,11 +13,7 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 64rem) {
-    justify-content: start;
-    padding-top: 1rem;
-  }
+  padding-top: 1rem;
 `;
 
 const Title = styled.h1`
@@ -69,24 +65,24 @@ const Faq = () => {
     null
   );
 
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
 
-  useLayoutEffect(() => {
-    const element: HTMLElement | null = faqRef.current;
+  // useLayoutEffect(() => {
+  //   const element: HTMLElement | null = faqRef.current;
 
-    ScrollTrigger.create({
-      trigger: element,
-      start: "top top",
-      end: "bottom top",
-      pin: true,
-      pinSpacing: false,
-      scrub: true,
-    });
+  //   ScrollTrigger.create({
+  //     trigger: element,
+  //     start: "top top",
+  //     end: "bottom top",
+  //     pin: true,
+  //     pinSpacing: false,
+  //     scrub: true,
+  //   });
 
-    return () => {
-      ScrollTrigger.getAll().forEach((st) => st.kill());
-    };
-  }, []);
+  //   return () => {
+  //     ScrollTrigger.getAll().forEach((st) => st.kill());
+  //   };
+  // }, []);
 
   return (
     <Section ref={faqRef} id="faq">

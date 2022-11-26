@@ -28,6 +28,7 @@ const List = styled.ul<{ click: boolean }>`
     width: 100vw;
     height: ${(props) => `100vh - ${props.theme.navHeight}`};
     z-index: 50;
+    overflow: auto;
     background-color: ${(props) => `rgba(${props.theme.bodyRgba},0.85)`};
 
     transition: all 0.5s ease;
@@ -73,7 +74,7 @@ const Menu = ({ isClick, setIsClick }: MenuProps) => {
     setIsClick(!isClick);
   };
   return (
-    <List click={isClick}>
+    <List click={isClick} onClick={() => setIsClick(!isClick)}>
       <Item onClick={() => scrollTo("home")}>Home</Item>
       <Item onClick={() => scrollTo("about")}>About</Item>
       <Item onClick={() => scrollTo("roadmap")}>Roadmap</Item>

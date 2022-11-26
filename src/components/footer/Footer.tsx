@@ -8,7 +8,7 @@ import Logo from "../common/Logo";
 import Banner from "./Banner";
 
 const Section = styled.section`
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 100vw;
   background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
@@ -16,6 +16,8 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding-bottom: 2rem;
 `;
 
 const Container = styled.div`
