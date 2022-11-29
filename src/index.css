@@ -5,6 +5,11 @@
   font-family: "Sora", sans-serif;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   font-family: unset;

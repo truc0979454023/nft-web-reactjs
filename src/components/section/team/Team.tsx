@@ -64,7 +64,7 @@ const Team = () => {
 
   return (
     <Section id="team">
-      <ConfettiComponent />
+      {/* <ConfettiComponent /> */}
       <Title>Team</Title>
       <Container>
         {data.map((d, index) => (
